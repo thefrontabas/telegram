@@ -1,0 +1,108 @@
+.messbox {
+  // background-color: #1e2124;
+  background-size: cover;
+  background-position: center;
+  background-image: url('https://blog.1a23.com/wp-content/uploads/sites/2/2020/02/Desktop.png');
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  flex: 9;
+  position: relative;
+  .messback {
+    height: 500vh;
+    background-color: #181818a3;
+    padding: 15px 35px;
+  }
+
+  .arrowbox {
+    position: absolute;
+    bottom: 12%;
+    right: 3%;
+    background-color: #2f2f30;
+    color: #9e9e9e;
+    padding-top: 8px;
+    padding-right: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+    font-size: 26px;
+    text-align: center;
+    border-radius: 50%;
+  }
+  .arrowbox:hover {
+    background-color: #404040;
+    transition: all ease 1s;
+  }
+  .anim-photo {
+    animation: animphoto 1s ease;
+  }
+  @keyframes animphoto {
+    30% {
+      transform: translateX(10px);
+    }
+    50% {
+      transform: translateX(-10px);
+    }
+    80% {
+      transform: translateX(10px);
+    }
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 376px) {
+  .messbox {
+    flex: 400px !important;
+    .messback {
+      padding: 15px 16px !important;
+    }
+  }
+}
+
+@media screen and (min-width: 377px) and (max-width: 450px) {
+  .messbox {
+    flex: 555px !important;
+    .messback {
+      padding-right: 15px !important;
+      padding-left: 15px !important;
+    }
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 550px) {
+  .messbox {
+    flex: 405px !important;
+    .messback {
+      padding-right: 15px !important;
+      padding-left: 15px !important;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 790px) {
+  .messbox {
+    flex: 700px !important;
+    .messback {
+      padding-right: 15px !important;
+      padding-left: 15px !important;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 850px) {
+  .messbox {
+    flex: 800px !important;
+    .messback {
+      padding-right: 15px !important;
+      padding-left: 15px !important;
+    }
+  }
+}
+
+@media screen and (min-width: 851px) and (max-width: 950px) {
+  .messbox {
+    flex: 75vh !important;
+    .messback {
+      padding-right: 15px !important;
+      padding-left: 15px !important;
+    }
+  }
+}

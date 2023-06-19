@@ -1,0 +1,124 @@
+.reactbox {
+  border-radius: 25px;
+  padding: 2px 5px;
+  background-color: #23272c;
+  width: 100%;
+  height: 35px;
+  text-align: center;
+  display: none;
+  cursor: pointer;
+  z-index: 1;
+  filter: drop-shadow(4px 4px 4px 4px rgba(0, 0, 0, 0.6784313725));
+}
+.reactbox ::-webkit-scrollbar {
+  height: 5px;
+}
+.reactbox ::-webkit-scrollbar-track {
+  background: rgba(61, 61, 61, 0.9176470588);
+  border-radius: 15px;
+}
+.reactbox ::-webkit-scrollbar-thumb {
+  background: #878787;
+  border-radius: 15px;
+}
+.reactbox .reactback {
+  width: auto;
+  height: 35px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+}
+.reactbox .reactback div {
+  margin: 0 2px;
+  font-size: 19px;
+  color: orange;
+}
+
+.daryaft .optionbox {
+  position: absolute;
+  z-index: 1;
+  top: -20px;
+  left: 70px;
+  width: 15%;
+  display: none;
+  height: auto;
+}
+.daryaft .optionbox .listoption {
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 100%;
+  margin-top: 7px;
+  padding: 10px 0px;
+  background-color: #23272c;
+  color: rgba(250, 246, 239, 0.8862745098);
+}
+.daryaft .optionbox .listoption .link:hover {
+  background-color: rgba(51, 57, 65, 0.2666666667);
+  transition: all ease 0.5s;
+}
+.daryaft .optionbox .listoption .link {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 90%;
+  font-size: 16px;
+  height: 35px;
+  padding-left: 12px;
+  font-family: AvenirLTStd-Light;
+}
+.daryaft .optionbox .listoption .link .text {
+  padding-left: 12px;
+  font-weight: 100;
+}
+
+.optionbox {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 20px;
+  width: 15%;
+  display: none;
+  height: auto;
+}
+.optionbox .listoption {
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 100%;
+  margin-top: 7px;
+  padding: 10px 0px;
+  background-color: #23272c;
+  color: rgba(250, 246, 239, 0.8862745098);
+}
+.optionbox .listoption .link:hover {
+  background-color: rgba(51, 57, 65, 0.2666666667);
+  transition: all ease 0.5s;
+}
+.optionbox .listoption .link {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: inherit;
+  font-size: 16px;
+  width: 90%;
+  height: 35px;
+  padding-left: 12px;
+  font-family: AvenirLTStd-Light;
+}
+.optionbox .listoption .link .text {
+  padding-left: 12px;
+  font-weight: 100;
+}
+
+@media screen and (min-width: 300px) and (max-width: 850px) {
+  .sendmessagebox .optionbox {
+    right: 60px !important;
+    width: 160px !important;
+  }
+  .daryaft .optionbox {
+    left: 60px !important;
+    width: 160px !important;
+  }
+}/*# sourceMappingURL=Reactbox.css.map */

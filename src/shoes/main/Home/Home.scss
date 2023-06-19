@@ -1,0 +1,57 @@
+body {
+  overflow-y: hidden !important;
+  width: 100%;
+  background-color: #23272c;
+}
+
+.respmenu {
+  display: none;
+  justify-content: space-between;
+  padding: 2px 8px;
+  height: 32px;
+  width: 100%;
+  background-color: #1e2124;
+  color: #f4f4f4;
+  .icon {
+    font-size: 25px;
+  }
+}
+
+.homebox {
+  height: 100vh;
+  width: inherit;
+  background-color: #23272c;
+  box-shadow: 4px 4px 4px 4px #00000005;
+  display: flex;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 950px) {
+  .homebox {
+    display: inline !important;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 360px) {
+  body {
+    width: 105% !important;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 450px) {
+  body {
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 455px) and (max-width: 600px) {
+  body {
+    width: 70% !important;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 850px) {
+  body {
+    width: 100% !important;
+  }
+}

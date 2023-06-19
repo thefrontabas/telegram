@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:700");
+@import url("https://v1.fontapi.ir/css/Yekan");
+@font-face {
+  font-family: Lora-Bold;
+  src: url(../Font/AvenirLTStd-Heavy.otf);
+}
+@font-face {
+  font-family: AvenirLTStd-Light;
+  src: url(../Font/AvenirLTStd-Light.otf);
+}
+@font-face {
+  font-family: Iranian Sans;
+  src: url("../Font/Iranian Sans.ttf");
+}
+@font-face {
+  font-family: Portada;
+  src: url("../Font/PortadaTextARA-Bold.otf");
+}/*# sourceMappingURL=Home.css.map */

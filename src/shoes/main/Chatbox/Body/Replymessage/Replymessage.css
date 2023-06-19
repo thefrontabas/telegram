@@ -1,0 +1,190 @@
+.reply-message-send {
+  width: 15rem;
+  margin-top: 25px;
+  padding: 4px 0;
+  padding-left: 12px;
+  height: -moz-fit-content;
+  height: fit-content;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.9960784314);
+  background: linear-gradient(169deg, #790975 3%, rgba(124, 16, 197, 0.9725490196) 54%);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.reply-message-send .reply-message-back {
+  text-align: right;
+  height: auto;
+  padding: 0px 4px;
+}
+.reply-message-send .reply-message-back .border {
+  width: 12px;
+  height: 15px;
+}
+.reply-message-send .reply-message-back .messagemain {
+  cursor: pointer;
+  text-align: left;
+}
+.reply-message-send .reply-message-back .messagemain .name {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9215686275);
+  font-weight: 500;
+  height: 17px;
+}
+.reply-message-send .reply-message-back .messagemain .text {
+  font-size: 12px;
+  max-width: 180px;
+  color: rgba(255, 255, 255, 0.7647058824);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Portada, AvenirLTStd-Light;
+}
+.reply-message-send .reply-message-back .messagemain .infoimg {
+  display: flex;
+  align-items: center;
+}
+.reply-message-send .reply-message-back .messagemain .infoimg .boxtext {
+  margin-left: 10px;
+}
+.reply-message-send .reply-message-back .messagemain .infoimg .boxtext .name {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9215686275);
+  font-weight: 500;
+  height: 17px;
+}
+.reply-message-send .reply-message-back .messagemain .infoimg .boxtext .text {
+  font-size: 12px;
+  max-width: 180px;
+  color: rgba(255, 255, 255, 0.7647058824);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Portada, AvenirLTStd-Light;
+}
+.reply-message-send .text-main {
+  font-size: 13px;
+  font-family: Portada, AvenirLTStd-Light;
+  text-align: left;
+  width: 200px;
+  color: rgba(255, 255, 255, 0.9960784314);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.reply-message-send .time {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.reply-message-send .time .date {
+  padding: 0 7px;
+  font-size: 11px;
+  font-family: AvenirLTStd-Light;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.9215686275);
+}
+.reply-message-send .time .editecontent {
+  padding-left: 10px;
+  font-size: 13px;
+  font-family: AvenirLTStd-Light;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.9215686275);
+}
+
+.reply-message-daryaft {
+  width: 15rem;
+  margin-top: 25px;
+  padding: 4px 0px;
+  padding-left: 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.9960784314);
+  background: #2e343a;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+.reply-message-daryaft .reply-message-back {
+  text-align: right;
+  height: auto;
+  padding-right: 8px;
+}
+.reply-message-daryaft .reply-message-back .border {
+  width: 12px;
+  height: 15px;
+}
+.reply-message-daryaft .reply-message-back .messagemain {
+  cursor: pointer;
+  text-align: left;
+}
+.reply-message-daryaft .reply-message-back .messagemain .name {
+  font-size: 14px;
+  color: #7b8799;
+  font-weight: 500;
+  height: 17px;
+}
+.reply-message-daryaft .reply-message-back .messagemain .text {
+  font-size: 12px;
+  max-width: 180px;
+  color: rgba(255, 255, 255, 0.7647058824);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Portada, AvenirLTStd-Light;
+}
+.reply-message-daryaft .reply-message-back .messagemain .infoimg {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.reply-message-daryaft .reply-message-back .messagemain .infoimg .boxtext {
+  margin-left: 10px;
+}
+.reply-message-daryaft .reply-message-back .messagemain .infoimg .boxtext .name {
+  font-size: 14px;
+  color: #7b8799;
+  font-weight: 500;
+  height: 17px;
+}
+.reply-message-daryaft .reply-message-back .messagemain .infoimg .boxtext .text {
+  font-size: 12px;
+  max-width: 180px;
+  color: rgba(255, 255, 255, 0.7647058824);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Portada, AvenirLTStd-Light;
+}
+.reply-message-daryaft .text-main {
+  font-size: 14px;
+  font-family: Portada, AvenirLTStd-Light;
+  text-align: left;
+  width: 200px;
+  color: rgba(255, 255, 255, 0.9960784314);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.reply-message-daryaft .time {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.reply-message-daryaft .time .date {
+  padding: 0 7px;
+  font-size: 11px;
+  font-family: AvenirLTStd-Light;
+  text-align: right;
+  color: #a5a4a4;
+}
+.reply-message-daryaft .time .editecontent {
+  padding-left: 3npmpx;
+  font-size: 13px;
+  font-family: AvenirLTStd-Light;
+  text-align: right;
+  color: #a5a4a4;
+}/*# sourceMappingURL=Replymessage.css.map */

@@ -1,0 +1,156 @@
+.sendbox {
+  width: auto;
+  background-color: #1d2024;
+  text-align: left;
+  padding: 15px;
+  flex: 0.5;
+  color: #5f5f5f;
+  cursor: pointer;
+  padding: 6px;
+
+  .emoji-picker {
+    position: absolute;
+    right: 2%;
+    bottom: 70px;
+    .emoji-picker-react {
+      box-shadow: 0 !important;
+      overflow-y: hidden !important;
+    }
+  }
+
+  .sendback {
+    width: 100%;
+    margin: 2px auto;
+    align-items: center;
+    display: flex;
+  }
+  .firstbox {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex: 95%;
+    .sendicon {
+      flex: 0.1;
+      font-size: 30px;
+      padding: 0;
+      transform: rotate(30deg);
+    }
+    .sendicon:hover {
+      color: #eeeeeec9;
+    }
+    .textbox {
+      flex: auto;
+
+      input {
+        border-radius: 4px;
+        background-color: inherit;
+        padding: 0px;
+        cursor: pointer;
+        margin: 0;
+        font-family: AvenirLTStd-Light, Portada;
+        outline: none;
+        width: 50rem;
+        font-size: 14px;
+        height: 100%;
+        border: 0;
+        color: #eeeeee;
+      }
+      ::placeholder {
+        color: #76767694;
+        font-size: 14px;
+      }
+    }
+    .custom-file-upload {
+      border: 1px solid #ccc;
+      display: inline-block;
+      padding: 6px 12px;
+      cursor: pointer;
+    }
+    input[type='file'] {
+      display: none;
+    }
+    .inputfile-box {
+      position: relative;
+    }
+
+    .input-file-image {
+      display: none;
+    }
+
+    .container {
+      display: inline-block;
+      width: 100%;
+    }
+
+    .file-box {
+      display: inline-block;
+      width: 100%;
+      border: 1px solid;
+      padding: 5px 0px 5px 5px;
+      box-sizing: border-box;
+      height: calc(2rem - 2px);
+    }
+  }
+  .twobox {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex: 5%;
+    .soundbox:hover {
+      color: #eeeeeec9;
+    }
+    .emojibox:hover {
+      color: #eeeeeec9;
+    }
+    .emojibox,
+    .soundbox {
+      flex: 0.5;
+      cursor: pointer;
+      font-size: 27px;
+      padding-left: 16px;
+    }
+  }
+  .sendmess {
+    flex: 0.5;
+    cursor: pointer;
+    font-size: 27px;
+    color: #7b8799;
+    padding-left: 13px;
+  }
+
+  @keyframes anim {
+    0% {
+      transform: translateX(15px);
+    }
+    100% {
+      transform: translateX(-15px);
+    }
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 950px) {
+  .sendback {
+    .firstbox {
+      max-width: 87% !important;
+    }
+    .twobox {
+      max-width: 10% !important;
+    }
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .emoji-picker {
+    left: 2% !important;
+    top: 5% !important;
+    height: 5px !important;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 950px) {
+  .emoji-picker {
+    right: 4% !important;
+    bottom: 70% !important;
+    height: 5px !important;
+  }
+}

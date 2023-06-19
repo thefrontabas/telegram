@@ -1,0 +1,149 @@
+.sendbox {
+  width: auto;
+  background-color: #1d2024;
+  text-align: left;
+  padding: 15px;
+  flex: 0.5;
+  color: #5f5f5f;
+  cursor: pointer;
+  padding: 6px;
+}
+.sendbox .emoji-picker {
+  position: absolute;
+  right: 2%;
+  bottom: 70px;
+}
+.sendbox .emoji-picker .emoji-picker-react {
+  box-shadow: 0 !important;
+  overflow-y: hidden !important;
+}
+.sendbox .sendback {
+  width: 100%;
+  margin: 2px auto;
+  align-items: center;
+  display: flex;
+}
+.sendbox .firstbox {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex: 95%;
+}
+.sendbox .firstbox .sendicon {
+  flex: 0.1;
+  font-size: 30px;
+  padding: 0;
+  transform: rotate(30deg);
+}
+.sendbox .firstbox .sendicon:hover {
+  color: rgba(238, 238, 238, 0.7882352941);
+}
+.sendbox .firstbox .textbox {
+  flex: auto;
+}
+.sendbox .firstbox .textbox input {
+  border-radius: 4px;
+  background-color: inherit;
+  padding: 0px;
+  cursor: pointer;
+  margin: 0;
+  font-family: AvenirLTStd-Light, Portada;
+  outline: none;
+  width: 50rem;
+  font-size: 14px;
+  height: 100%;
+  border: 0;
+  color: #eeeeee;
+}
+.sendbox .firstbox .textbox ::-moz-placeholder {
+  color: rgba(118, 118, 118, 0.5803921569);
+  font-size: 14px;
+}
+.sendbox .firstbox .textbox ::placeholder {
+  color: rgba(118, 118, 118, 0.5803921569);
+  font-size: 14px;
+}
+.sendbox .firstbox .custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.sendbox .firstbox input[type=file] {
+  display: none;
+}
+.sendbox .firstbox .inputfile-box {
+  position: relative;
+}
+.sendbox .firstbox .input-file-image {
+  display: none;
+}
+.sendbox .firstbox .container {
+  display: inline-block;
+  width: 100%;
+}
+.sendbox .firstbox .file-box {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid;
+  padding: 5px 0px 5px 5px;
+  box-sizing: border-box;
+  height: calc(2rem - 2px);
+}
+.sendbox .twobox {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  flex: 5%;
+}
+.sendbox .twobox .soundbox:hover {
+  color: rgba(238, 238, 238, 0.7882352941);
+}
+.sendbox .twobox .emojibox:hover {
+  color: rgba(238, 238, 238, 0.7882352941);
+}
+.sendbox .twobox .emojibox,
+.sendbox .twobox .soundbox {
+  flex: 0.5;
+  cursor: pointer;
+  font-size: 27px;
+  padding-left: 16px;
+}
+.sendbox .sendmess {
+  flex: 0.5;
+  cursor: pointer;
+  font-size: 27px;
+  color: #7b8799;
+  padding-left: 13px;
+}
+@keyframes anim {
+  0% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(-15px);
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 950px) {
+  .sendback .firstbox {
+    max-width: 87% !important;
+  }
+  .sendback .twobox {
+    max-width: 10% !important;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .emoji-picker {
+    left: 2% !important;
+    top: 5% !important;
+    height: 5px !important;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 950px) {
+  .emoji-picker {
+    right: 4% !important;
+    bottom: 70% !important;
+    height: 5px !important;
+  }
+}/*# sourceMappingURL=Send.css.map */

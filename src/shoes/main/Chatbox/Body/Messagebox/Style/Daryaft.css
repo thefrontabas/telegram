@@ -1,0 +1,284 @@
+.daryaft {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+}
+.daryaft ::-moz-selection {
+  color: #f8f8f8;
+  background: #7b8799;
+}
+.daryaft ::selection {
+  color: #f8f8f8;
+  background: #7b8799;
+}
+.daryaft .forwardtextbox {
+  height: 15px;
+  padding: 10px 0;
+  text-align: left;
+  width: 100%;
+  font-size: 13px;
+  font-family: Lora-Bold;
+  color: #7b8799;
+}
+.daryaft .message {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px;
+  position: relative;
+  font-family: Portada;
+  margin-top: 25px;
+  height: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 4px 10px;
+  background: #2e343a;
+}
+.daryaft .message .text {
+  font-size: 13px;
+  max-width: 250px;
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.9215686275);
+}
+.daryaft .message .flexmessage {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  height: auto;
+  color: rgba(255, 255, 255, 0.9215686275);
+}
+.daryaft .message .time {
+  padding-left: 3px;
+  font-size: 11px;
+  font-family: AvenirLTStd-Light;
+  text-align: right;
+  color: #a5a4a4;
+}
+.daryaft .message .editecontent {
+  padding-left: 10px;
+  font-size: 13px;
+  font-family: AvenirLTStd-Light;
+  text-align: right;
+  color: #a5a4a4;
+}
+.daryaft .img-message {
+  width: 15rem;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px;
+  margin-top: 25px;
+  cursor: pointer;
+  padding: 2px;
+  padding-bottom: 5px;
+  position: relative;
+  color: rgba(255, 255, 255, 0.7803921569);
+  font-size: 15px;
+  background: #2e343a;
+  height: auto;
+}
+.daryaft .img-message .flex {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  flex-direction: row;
+}
+.daryaft .img-message img:nth-child(1) {
+  padding-bottom: 10px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.daryaft .img-message img:nth-child(2) {
+  border-top-right-radius: 0px;
+}
+.daryaft .img-message img {
+  width: 100%;
+  max-height: 80%;
+}
+.daryaft .img-message .text-caption {
+  font-family: Portada;
+  text-align: right;
+  font-size: 13px;
+  overflow: hidden;
+  width: 98%;
+  margin: 0px auto;
+  color: rgba(255, 255, 255, 0.9960784314);
+}
+.daryaft .img-message .time {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.daryaft .img-message .time .date {
+  padding-right: 10px;
+  font-size: 11px;
+  font-family: AvenirLTStd-Light;
+  text-align: right;
+  color: #a5a4a4;
+}
+.daryaft .img-message .time .editecontent {
+  padding-right: 3px;
+  font-size: 13px;
+  font-family: AvenirLTStd-Light;
+  text-align: right;
+  color: #a5a4a4;
+}
+.daryaft .flexvoice {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.daryaft .flexvoice .play {
+  flex: 0.5;
+}
+.daryaft .flexvoice .play ion-icon {
+  border-radius: 50%;
+  padding: 9px;
+  background-color: rgba(156, 170, 190, 0.7803921569);
+  color: rgba(13, 15, 17, 0.7803921569);
+  font-size: 21px;
+}
+.daryaft .flexvoice .wavebox {
+  flex: 2;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.sendmessagebox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: relative;
+}
+.sendmessagebox ::-moz-selection {
+  color: #f8f8f8;
+  background: #7b8799;
+}
+.sendmessagebox ::selection {
+  color: #f8f8f8;
+  background: #7b8799;
+}
+.sendmessagebox .forwardtextbox {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 13px;
+  padding: 8px 0;
+  text-align: left;
+  font-weight: bold;
+  font-size: 13px;
+  font-family: Lora-Bold;
+  color: rgba(255, 255, 255, 0.6588235294);
+}
+.sendmessagebox .img-message {
+  width: 15rem;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: 25px;
+  cursor: pointer;
+  padding: 2px;
+  padding-bottom: 5px;
+  position: relative;
+  color: #000;
+  font-size: 15px;
+  background: linear-gradient(169deg, #790975 3%, rgba(124, 16, 197, 0.9725490196) 44%);
+  height: auto;
+}
+.sendmessagebox .img-message .text-caption {
+  font-family: Portada;
+  text-align: right;
+  font-size: 13px;
+  overflow: hidden;
+  width: 98%;
+  margin: 0px auto;
+  color: rgba(255, 255, 255, 0.9960784314);
+}
+.sendmessagebox .img-message .flex {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  flex-direction: row;
+}
+.sendmessagebox .img-message img:nth-child(1) {
+  padding-bottom: 10px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.sendmessagebox .img-message img:nth-child(2) {
+  border-top-right-radius: 0px;
+}
+.sendmessagebox .img-message img {
+  width: 100%;
+  max-height: 80%;
+}
+.sendmessagebox .img-message .time {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.sendmessagebox .img-message .time .date {
+  padding: 0 7px;
+  font-size: 11px;
+  font-family: AvenirLTStd-Light;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.9215686275);
+}
+.sendmessagebox .img-message .time .editecontent {
+  padding-left: 10px;
+  font-size: 13px;
+  font-family: AvenirLTStd-Light;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.9215686275);
+}
+.sendmessagebox .message {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: relative;
+  font-family: Portada;
+  height: auto;
+  margin-top: 25px;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: linear-gradient(169deg, #790975 3%, rgba(124, 16, 197, 0.9725490196) 44%);
+  padding: 4px 10px;
+}
+.sendmessagebox .message .text {
+  font-size: 13px;
+  max-width: 250px;
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.9215686275);
+}
+.sendmessagebox .message .flexmessage {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  height: auto;
+  color: rgba(255, 255, 255, 0.9215686275);
+}
+.sendmessagebox .message .time {
+  padding-left: 3px;
+  font-size: 11px;
+  font-family: AvenirLTStd-Light;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.9215686275);
+}
+.sendmessagebox .message .editecontent {
+  padding-left: 3px;
+  font-size: 13px;
+  font-family: AvenirLTStd-Light;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.9215686275);
+}/*# sourceMappingURL=Daryaft.css.map */

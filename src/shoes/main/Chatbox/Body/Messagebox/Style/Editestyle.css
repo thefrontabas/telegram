@@ -1,0 +1,64 @@
+.editebox {
+  width: 100%;
+  height: 45px;
+  position: absolute;
+  overflow: hidden !important;
+  bottom: 0px;
+  left: 0;
+  background-color: #1d2024;
+  padding: 1px 10px;
+}
+.editebox .editeback {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.editebox .editeback .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-family: Portada, AvenirLTStd-Light;
+}
+.editebox .editeback .flex .box1 {
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+.editebox .editeback .flex .box1 .icon {
+  font-size: 30px;
+  color: #7b8799;
+}
+.editebox .editeback .flex .box1 .info {
+  flex: 1;
+  margin-left: 20px;
+  width: 100%;
+}
+.editebox .editeback .flex .box1 .info .name {
+  color: #7b8799;
+  font-size: 14px;
+  font-family: AvenirLTStd-Light;
+  height: 20px;
+}
+.editebox .editeback .flex .box1 .info .text {
+  color: #e6f4f2;
+  font-size: 12px;
+  overflow: hidden;
+  width: 300px;
+  font-family: AvenirLTStd-Light, Portada;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.editebox .editeback .flex .box1 .infoimg {
+  flex: 1;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.editebox .editeback .box2 .close {
+  color: #555555;
+  font-size: 22px;
+}
+.editebox .editeback .box2 .close:hover {
+  color: #eeeeee;
+}/*# sourceMappingURL=Editestyle.css.map */

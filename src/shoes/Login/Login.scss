@@ -1,0 +1,77 @@
+@font-face {
+  font-family: Singer Mears;
+  src: url('../main/Font/Singer\ Mears.ttf');
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1d2024;
+  .loginbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    .logo {
+      text-align: center;
+      img {
+        width: 185px;
+        cursor: pointer;
+      }
+    }
+
+    button {
+      margin: 25px 0;
+      border-radius: 6px;
+      color: #fff;
+      background-color: #7b8799;
+      border: 0;
+      font-size: 20px;
+      padding: 20px 25px;
+      cursor: pointer;
+      font-family: Singer Mears;
+    }
+  }
+}
+
+.text-effect {
+  display: flex;
+  justify-content: center;
+  user-select: none;
+  text-align: center;
+  cursor: pointer;
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 65px;
+    font-family: Singer Mears;
+
+    .letter {
+      transition: ease-out 1s;
+      transform: translateY(40%);
+    }
+    .shadow {
+      transform: scale(1, -1);
+      color: #999999ad;
+      transition: ease-in 5s, ease-out 5s;
+    }
+    &:hover {
+      .letter {
+        transform: translateY(-50%);
+      }
+      .shadow {
+        opacity: 0;
+        transform: translateY(200%);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .wrapper,
+  .shadow {
+    font-size: 15px !important;
+  }
+}

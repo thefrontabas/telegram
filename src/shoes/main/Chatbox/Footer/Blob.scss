@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+
+.gooey {
+  background-image: linear-gradient(120deg, #878787 0%, #b400ff 100%);
+  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+  width: 45px;
+  height: 38px;
+  animation: morph 1s linear infinite;
+  transform-style: preserve-3d;
+  outline: 1px solid transparent;
+  will-change: border-radius;
+  color: #fff;
+  text-align: center;
+}
+.gooey:before,
+.gooey:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+  will-change: border-radius, transform, opacity;
+  animation-delay: 200ms;
+  background-image: linear-gradient(120deg, #878787 0%, #2e8d80b8 100%);
+}
+
+.gooey:before {
+  animation: morph 1s linear infinite;
+  animation-duration: 1.5s;
+}
+
+.gooey:after {
+  animation: morph 3s linear infinite;
+  animation-delay: 400ms;
+  opacity: 0.89;
+  line-height: 120px;
+  text-indent: -21px;
+}
+
+@keyframes morph {
+  0%,
+  100% {
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+  24% {
+    border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+  }
+  40% {
+    opacity: 0.89;
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+  57% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+  }
+}
+
+@keyframes fadeIn {
+  100% {
+    transform: scale(1.03);
+    opacity: 0;
+  }
+}

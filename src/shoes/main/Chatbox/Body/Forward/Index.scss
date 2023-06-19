@@ -1,0 +1,198 @@
+.forwardbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #23272c;
+  width: 19rem;
+  transform: translate(-50%, -50%);
+  height: auto;
+  border-radius: 10px;
+  padding: 20px 0;
+  box-shadow: 10px 10px 5px 5px #00000005;
+  cursor: pointer;
+  .head {
+    text-align: left;
+    color: #fffffff4;
+    font-size: 17px;
+    padding: 0 15px;
+  }
+  .activeusermain {
+    display: flex;
+    height: auto;
+    padding: 0 15px;
+    width: 90%;
+    margin-bottom: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+
+    .user {
+      width: 50%;
+      display: flex;
+      height: 65px;
+      align-items: center;
+      justify-content: left;
+      .activeavatar:hover .activeback {
+        opacity: 1;
+        transition: all ease 1s;
+      }
+      .activeavatar {
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        .activeback {
+          position: absolute;
+          border-radius: 50%;
+          background-color: #7d8796;
+          width: 40px;
+          height: 35px;
+          opacity: 0;
+          padding-top: 5px;
+          text-align: center;
+          font-size: 25px;
+          cursor: pointer;
+          color: #fffffff4;
+        }
+      }
+
+      .infobox {
+        flex: 4;
+        text-align: left;
+        padding-left: 5px;
+        cursor: pointer;
+        .name {
+          color: #eeeeee;
+          height: 22px;
+          font-size: 15px;
+          font-family: AvenirLTStd-Light, Portada;
+        }
+        .last {
+          color: #b1b1b1;
+          font-size: 12px;
+          font-family: AvenirLTStd-Light, Portada;
+
+          .flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: fit-content;
+            .text {
+              padding-left: 4px;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .userbox,
+  .savedbox {
+    margin-top: 15px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    .user:hover {
+      background-color: #33394144;
+    }
+    .user {
+      padding-left: 15px;
+      max-width: 100%;
+      display: flex;
+      height: 55px;
+      align-items: center;
+      justify-content: left;
+      border-bottom: 0.5px solid rgba(128, 128, 128, 0.097);
+
+      .avatar {
+        flex: 1;
+
+        img {
+          width: 43px;
+          cursor: pointer;
+          border-radius: 50%;
+        }
+        .icon {
+          text-align: center;
+          color: #fffffff5;
+          background: rgb(179, 209, 226);
+          background: linear-gradient(
+            159deg,
+            rgba(179, 209, 226, 1) 0%,
+            rgba(4, 137, 213, 1) 48%
+          );
+          border-radius: 50%;
+          padding: 6px 0px;
+          width: 40px;
+          font-size: 21px;
+        }
+      }
+      .infobox {
+        flex: 4.5;
+        text-align: left;
+        cursor: pointer;
+        .name {
+          color: #eeeeee;
+          height: 22px;
+          font-size: 15px;
+          font-family: AvenirLTStd-Light, Portada;
+        }
+        .last {
+          color: #b1b1b1;
+          font-size: 12px;
+          font-family: AvenirLTStd-Light, Portada;
+
+          .flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: fit-content;
+            .text {
+              padding-left: 4px;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.footer {
+  width: 95%;
+  height: auto;
+  padding-top: 25px;
+  margin: 0 auto;
+  .sendboxforward {
+    color: #99a6ba;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span {
+      border-radius: 4px;
+      width: auto;
+      text-align: center;
+      padding: 3px 10px;
+      transition: all ease 0.5s;
+    }
+    span:hover {
+      background-color: #99a6ba25;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 699px) {
+  .forwardbox {
+    left: 35% !important;
+    top: 35% !important;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .forwardbox {
+    left: 50% !important;
+    top: 50% !important;
+  }
+}

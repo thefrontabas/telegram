@@ -1,0 +1,158 @@
+@font-face {
+  font-family: AvenirLTStd-Light;
+  src: url(../../../Font/AvenirLTStd-Light.otf);
+}
+@font-face {
+  font-family: Portada;
+  src: url("../../../Font/PortadaTextARA-Bold.otf");
+}
+.imagefilterbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #23272c;
+  width: 19rem;
+  height: auto;
+  border-radius: 10px;
+  padding: 20px 18px;
+  box-shadow: 15px 15px 5px 5px rgba(0, 0, 0, 0.0196078431);
+  cursor: pointer;
+}
+.imagefilterbox .head {
+  text-align: left;
+  color: rgba(255, 255, 255, 0.9568627451);
+  font-size: 17px;
+}
+.imagefilterbox .imagebox {
+  margin: 15px auto;
+  width: 100%;
+  height: 16rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  flex-direction: row;
+}
+.imagefilterbox .imagebox .image {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  border-radius: 3px;
+  position: relative;
+  margin: 5px 0;
+  box-shadow: 15px 15px 5px 5px rgba(0, 0, 0, 0.0196078431);
+}
+.imagefilterbox .imagebox .image .back {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.4352941176);
+  border-radius: 3px;
+  text-align: center;
+  padding: 2px 7px;
+  color: rgba(255, 255, 255, 0.9568627451);
+  font-size: 14px;
+}
+.imagefilterbox .captionbox {
+  margin: 30px auto;
+  width: 100%;
+  height: 60px;
+}
+.imagefilterbox .captionbox .emoji-picker {
+  position: absolute;
+  left: 50px;
+  top: -20%;
+}
+.imagefilterbox .captionbox .emoji-picker .emoji-picker-react {
+  box-shadow: 0 !important;
+  overflow-y: hidden !important;
+}
+.imagefilterbox .captionbox .inputbox {
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid #99a6ba;
+}
+.imagefilterbox .captionbox .inputbox label {
+  color: #99a6ba;
+  font-size: 14px;
+}
+.imagefilterbox .captionbox .inputbox .input {
+  display: flex;
+  align-items: center;
+}
+.imagefilterbox .captionbox .inputbox .input .text {
+  flex: 3;
+}
+.imagefilterbox .captionbox .inputbox .input .text input {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background-color: inherit;
+  color: rgba(255, 255, 255, 0.9568627451);
+  font-family: AvenirLTStd-Light, Portada;
+}
+.imagefilterbox .captionbox .inputbox .input .icon {
+  color: rgba(145, 145, 145, 0.7882352941);
+  font-size: 25px;
+}
+.imagefilterbox .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  padding-top: 25px;
+}
+.imagefilterbox .footer .boxadd {
+  flex: 3;
+  color: #99a6ba;
+}
+.imagefilterbox .footer .boxadd input[type=file] {
+  display: none;
+}
+.imagefilterbox .footer .boxadd div {
+  border-radius: 4px;
+  width: 35px;
+  text-align: center;
+  padding: 3px 10px;
+  transition: all ease 0.5s;
+}
+.imagefilterbox .footer .boxadd div:hover {
+  background-color: rgba(153, 166, 186, 0.1450980392);
+}
+.imagefilterbox .footer .sendboximage {
+  flex: 2;
+  color: #99a6ba;
+}
+.imagefilterbox .footer .sendboximage span {
+  border-radius: 4px;
+  width: auto;
+  text-align: center;
+  padding: 3px 10px;
+  transition: all ease 0.5s;
+}
+.imagefilterbox .footer .sendboximage span:hover {
+  background-color: rgba(153, 166, 186, 0.1450980392);
+}
+
+@media screen and (min-width: 300px) and (max-width: 1024px) {
+  .inputbox .icon {
+    display: none;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 699px) {
+  .imagefilterbox {
+    left: 35% !important;
+    top: 35% !important;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .imagefilterbox {
+    left: 50% !important;
+    top: 50% !important;
+  }
+}/*# sourceMappingURL=Imagebox.css.map */

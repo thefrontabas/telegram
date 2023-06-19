@@ -1,0 +1,104 @@
+.daryaft {
+  .voicebox {
+    width: auto;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    margin-top: 25px;
+    height: auto;
+    cursor: pointer;
+    padding-left: 15px;
+
+    padding: 5px;
+    color: #000;
+    font-size: 15px;
+    position: relative;
+    background-color: #2e343a;
+
+    .time {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      .date {
+        padding: 0 7px;
+        font-size: 11px;
+        font-family: AvenirLTStd-Light;
+        text-align: right;
+        color: #a5a4a4;
+      }
+    }
+  }
+
+  audio::-webkit-media-controls-panel {
+    background-color: #2e343a;
+    border: 0;
+  }
+  audio::-webkit-media-controls-current-time-display {
+    color: #fff;
+  }
+  audio::-webkit-media-controls-time-remaining-display {
+    color: #fff;
+  }
+  audio::-webkit-media-controls-play-button {
+    background-color: #b1d4e0;
+    border-radius: 10%;
+    color: #e50909;
+  }
+  audio::-webkit-media-controls-mute-button {
+    background-color: #b1d4e0;
+    border-radius: 50%;
+  }
+}
+.sendmessagebox {
+  .voicebox {
+    width: auto;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-top: 25px;
+    height: auto;
+    cursor: pointer;
+    padding-left: 15px;
+
+    padding: 5px;
+    color: #000;
+    font-size: 15px;
+    position: relative;
+    background: linear-gradient(169deg, #790975 3%, #7c10c5f8 54%);
+
+    .time {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      .date {
+        padding: 0 7px;
+        font-size: 11px;
+        font-family: AvenirLTStd-Light;
+        text-align: right;
+        color: #f7f6f6;
+      }
+    }
+  }
+
+  audio::-webkit-media-controls-panel {
+    background: linear-gradient(169deg, #790975 3%, #7c10c5f8 54%);
+    border: 0;
+  }
+  audio::-webkit-media-controls-current-time-display {
+    color: #fff;
+  }
+  audio::-webkit-media-controls-time-remaining-display {
+    color: #fff;
+  }
+  audio::-webkit-media-controls-play-button {
+    background-color: #ebf7fb;
+    border-radius: 10%;
+    color: #e50909;
+  }
+  audio::-webkit-media-controls-mute-button {
+    background-color: #ebf7fb;
+    border-radius: 50%;
+  }
+}

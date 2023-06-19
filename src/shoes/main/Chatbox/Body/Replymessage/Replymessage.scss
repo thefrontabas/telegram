@@ -1,0 +1,194 @@
+.reply-message-send {
+  width: 15rem;
+  margin-top: 25px;
+  padding: 4px 0;
+  padding-left: 12px;
+  height: fit-content;
+  cursor: pointer;
+  color: #fffffffe;
+  background: linear-gradient(169deg, #790975 3%, #7c10c5f8 54%);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  .reply-message-back {
+    text-align: right;
+    height: auto;
+    padding: 0px 4px;
+    .border {
+      width: 12px;
+      height: 15px;
+    }
+    .messagemain {
+      cursor: pointer;
+      text-align: left;
+      .name {
+        font-size: 14px;
+        color: #ffffffeb;
+        font-weight: 500;
+        height: 17px;
+      }
+      .text {
+        font-size: 12px;
+        max-width: 180px;
+        color: #ffffffc3;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-family: Portada, AvenirLTStd-Light;
+      }
+      .infoimg {
+        display: flex;
+        align-items: center;
+        .boxtext {
+          margin-left: 10px;
+          .name {
+            font-size: 14px;
+            color: #ffffffeb;
+            font-weight: 500;
+            height: 17px;
+          }
+          .text {
+            font-size: 12px;
+            max-width: 180px;
+            color: #ffffffc3;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-family: Portada, AvenirLTStd-Light;
+          }
+        }
+      }
+    }
+  }
+  .text-main {
+    font-size: 13px;
+    font-family: Portada, AvenirLTStd-Light;
+    text-align: left;
+    width: 200px;
+    color: #fffffffe;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .time {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    .date {
+      padding: 0 7px;
+      font-size: 11px;
+      font-family: AvenirLTStd-Light;
+      text-align: right;
+      color: #ffffffeb;
+    }
+    .editecontent {
+      padding-left: 10px;
+      font-size: 13px;
+      font-family: AvenirLTStd-Light;
+      text-align: right;
+      color: #ffffffeb;
+    }
+  }
+}
+
+.reply-message-daryaft {
+  width: 15rem;
+  margin-top: 25px;
+  padding: 4px 0px;
+  padding-left: 10px;
+
+  height: fit-content;
+  cursor: pointer;
+  color: #fffffffe;
+  background: #2e343a;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px;
+
+  .reply-message-back {
+    text-align: right;
+    height: auto;
+    padding-right: 8px;
+
+    .border {
+      width: 12px;
+      height: 15px;
+    }
+    .messagemain {
+      cursor: pointer;
+      text-align: left;
+      .name {
+        font-size: 14px;
+        color: #7b8799;
+        font-weight: 500;
+        height: 17px;
+      }
+      .text {
+        font-size: 12px;
+        max-width: 180px;
+        color: #ffffffc3;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-family: Portada, AvenirLTStd-Light;
+      }
+      .infoimg {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        .boxtext {
+          margin-left: 10px;
+          .name {
+            font-size: 14px;
+            color: #7b8799;
+            font-weight: 500;
+            height: 17px;
+          }
+          .text {
+            font-size: 12px;
+            max-width: 180px;
+            color: #ffffffc3;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-family: Portada, AvenirLTStd-Light;
+          }
+        }
+      }
+    }
+  }
+
+  .text-main {
+    font-size: 14px;
+    font-family: Portada, AvenirLTStd-Light;
+    text-align: left;
+    width: 200px;
+    color: #fffffffe;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .time {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    .date {
+      padding: 0 7px;
+      font-size: 11px;
+      font-family: AvenirLTStd-Light;
+      text-align: right;
+      color: #a5a4a4;
+    }
+    .editecontent {
+      padding-left: 3npmpx;
+      font-size: 13px;
+      font-family: AvenirLTStd-Light;
+      text-align: right;
+      color: #a5a4a4;
+    }
+  }
+}
