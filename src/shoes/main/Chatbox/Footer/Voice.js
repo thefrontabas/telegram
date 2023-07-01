@@ -7,7 +7,7 @@ import axios from 'axios';
 
 import '../../Style/Home.scss';
 import Blob from './Blob';
-import { requestfunc } from '../../Redux/Index';
+import { allmessagefunc, requestfunc } from '../../Redux/Index';
 import { useDispatch } from 'react-redux';
 
 const recorder = new vmsg.Recorder({
@@ -47,6 +47,8 @@ export default function Voice(params) {
       replyid: redux.id !== '' ? redux.id : '',
       edite: false,
     };
+    dispach(allmessagefunc([...redux.allmessage, data]));
+
     try {
       let getdata = await axios(
         location.pathname.slice(7, 21) !== 'Saved-Messages'
@@ -57,6 +59,7 @@ export default function Voice(params) {
               21,
             )}`,
       );
+
       let res = axios.put(
         location.pathname.slice(7, 21) !== 'Saved-Messages'
           ? `https://6437f5e2c1565cdd4d6274f2.mockapi.io/telegram/${location.pathname.slice(

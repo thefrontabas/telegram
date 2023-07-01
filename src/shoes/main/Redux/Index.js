@@ -18,6 +18,7 @@ export const homeslice = createSlice({
       imageshow: false,
       forwardshow: false,
       forwardlist: {},
+      allmessage: [],
     },
   },
   reducers: {
@@ -75,6 +76,9 @@ export const homeslice = createSlice({
     forwardlistfunc: (state, action) => {
       state.value.forwardlist = action.payload;
     },
+    allmessagefunc: (state, action) => {
+      state.value.allmessage = action.payload;
+    },
   },
 });
 
@@ -94,6 +98,7 @@ export const {
   imageshowfunc,
   forwardshowfunc,
   forwardlistfunc,
+  allmessagefunc,
 } = homeslice.actions;
 
 export default homeslice.reducer;

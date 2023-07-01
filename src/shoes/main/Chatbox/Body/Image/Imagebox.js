@@ -7,6 +7,7 @@ import Picker from '@emoji-mart/react';
 import data from '@emoji-mart/data';
 
 import {
+  allmessagefunc,
   idfunc,
   imagefilterfunc,
   imagefunc,
@@ -48,7 +49,9 @@ export default function Imagebox() {
       edite: false,
       name: redux.gmail.displayName,
     };
+
     try {
+      dispach(allmessagefunc([...redux.allmessage, data]));
       let getdata = await axios(
         location.pathname.slice(7, 21) !== 'Saved-Messages'
           ? `https://6437f5e2c1565cdd4d6274f2.mockapi.io/telegram/${location.pathname.slice(

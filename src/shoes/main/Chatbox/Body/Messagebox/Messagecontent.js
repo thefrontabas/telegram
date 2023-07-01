@@ -36,6 +36,8 @@ export default function Messagecontent({ mess }) {
       react[index].style.display = 'none';
     }
   };
+
+  console.log(state.allmessage);
   return (
     <>
       {toast && (
@@ -43,7 +45,7 @@ export default function Messagecontent({ mess }) {
       )}
 
       <Suspense fallback={<Loading />}>
-        {mess?.message?.map((item, index) => {
+        {state?.allmessage?.map((item, index) => {
           return (
             <>
               <div
@@ -61,7 +63,7 @@ export default function Messagecontent({ mess }) {
                   voice={item.voice}
                   name={item?.name}
                   toastfunc={toastfunc}
-                  caption={item?.img.caption}
+                  caption={item?.img?.caption}
                   replymessage={item?.replymessage}
                   replyid={item?.replyid}
                   react={item?.react}

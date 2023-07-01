@@ -7,6 +7,7 @@ import axios from 'axios';
 import { useLocation } from 'react-router-dom';
 
 import {
+  allmessagefunc,
   editeshowfunc,
   idfunc,
   messagefunc,
@@ -41,6 +42,7 @@ export default function Send2({ text, custom, toastfunc, textfunc }) {
         : `https://645673d55f9a4f2361448ff9.mockapi.io/Saved-Messages/${location.pathname.slice(
             21,
           )}`,
+      dispach(allmessagefunc([...redux.allmessage, data])),
     );
     if (!redux.editeshow) {
       try {

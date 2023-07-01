@@ -16,7 +16,7 @@ export default function Motion({ id, name, index, funcprop }) {
 
   useEffect(() => {
     getdata();
-  }, [redux.request || location.pathname]);
+  }, [redux.allmessage || location.pathname]);
 
   useEffect(() => {
     setSeed(
@@ -39,7 +39,7 @@ export default function Motion({ id, name, index, funcprop }) {
     setElem(
       <>
         <div className="last">
-          {mess.message[mess.message.length - 1]?.message != '' ? (
+          {redux?.allmessage[mess.message.length - 1]?.message != '' ? (
             <div className="text-message" style={{ textDecoration: 'none' }}>
               {mess.message[mess.message.length - 1]?.message}
             </div>
